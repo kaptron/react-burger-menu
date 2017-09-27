@@ -5,7 +5,7 @@ let styles = {
   overlay(isOpen) {
     return {
       position: 'fixed',
-      zIndex: 1,
+      zIndex: 100,
       width: '100%',
       height: '100%',
       background: 'rgba(0, 0, 0, 0.3)',
@@ -23,7 +23,7 @@ let styles = {
     return {
       position: 'fixed',
       right: right ? 0 : 'inherit',
-      zIndex: 2,
+      zIndex: 200,
       width,
       height: '100%',
       MozTransform: isOpen ? '' : right ? 'translate3d(100%, 0, 0)' : 'translate3d(-100%, 0, 0)',
